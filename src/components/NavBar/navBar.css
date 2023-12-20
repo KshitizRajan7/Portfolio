@@ -1,0 +1,106 @@
+.navbar{
+    background:linear-gradient(to bottom, black,rgba(245, 238, 238, 0.1));
+    height: 5rem;
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    position: sticky;
+    top:0;
+    z-index: 3;
+    opacity: 0;
+    -webkit-animation: fade 3s forwards; /* Safari and Chrome */
+    -moz-animation: fade 3s forwards; /* Firefox */
+    animation: fade 3s forwards; /* Standard syntax */
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 8rem;
+}
+
+.menu{
+    margin-left: 25rem;
+}
+.menuListItem{
+    color: gray;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.menuListItem:hover{ 
+    color: white;
+    padding-bottom: 0.5rem;
+    /* border-bottom: 1px solid orange; */
+
+}
+
+.menubtn{
+    background: rgb(0, 119, 128);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.menuimg{
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    margin: 10px 10px;
+}
+
+.active{
+    color:white;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid white;
+}
+
+.navMenu{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgba(40, 40, 40, 0.5);
+    border-radius: 1rem;
+}
+
+.ListItem{
+    color:black;
+    padding: 0.5rem 3rem;
+    margin: 0.2rem;
+    background: white;
+    border:none;
+    border-radius: 1rem;
+}
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+    .menubtn{
+        display: none;
+    }
+    
+}

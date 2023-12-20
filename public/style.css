@@ -1,0 +1,16 @@
+*{ /* for whole generalise thing*/
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(0,0,0);
+    color: white;
+    overflow: hidden; /*something donot fit in web page , we can do this*/
+    overflow-y: scroll; /*scroll to vertical direction*/
+}
+

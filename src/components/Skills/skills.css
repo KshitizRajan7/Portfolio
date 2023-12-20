@@ -1,0 +1,128 @@
+#skills{
+    margin-bottom: 10rem;
+    color: gray;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 90rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+
+.motovlogger{
+    object-fit: cover;
+    height: 7rem;
+    width: 7rem;
+    margin: 1rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.skillDesc{
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillBars{
+    margin: 1px;
+    width: 75vw;
+    max-width: 100%;
+    text-align: left;
+    animation: fade 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+
+.skillBarImg{
+    object-fit: cover;
+    height: 7rem;
+    width: 7rem;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+.rides{
+    margin: 1rem 5px;
+    height: 2vw;
+}
+
+.rides:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+
+.channelnames{
+    color: rgb(0, 119, 128) ;
+}
+.skillBar{
+    display:flex;
+    margin: 2px;
+    padding: 1 1rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50,0.4);
+}
+
+.skillBarm{
+    display: flex;
+    padding: 1 1rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50,0.4);
+}
+
+.skillBarText{
+    color:gray;
+    margin-top: 10px;
+    
+}
+.skillBarText>p{
+    font-size: 1rem;
+    font-weight: 50;
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>p{
+        font-size: 2vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .skillBarText>p{
+        font-size: 3vw;
+    }
+
+    .skillBarImg{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    
+    .skillBarText>h2{
+        font-size: 5vw;
+    }
+    
+}
+

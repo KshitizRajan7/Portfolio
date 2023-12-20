@@ -1,0 +1,124 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.pp{
+    position:absolute;
+    top: 6rem;
+    right:0;
+    margin-right: 5rem;
+    z-index: -1; 
+    object-fit: cover;
+    height: 70vh;
+    opacity: 0;
+    -webkit-animation: fade 1s forwards; /* Safari and Chrome */
+    -moz-animation: fade 1s forwards; /* Firefox */
+    animation: fade 1s forwards; /* Standard syntax */
+    /* border-radius: 100%;
+    border: 5px solid grey; */
+}
+
+.introContent{
+    margin-top: 4rem;
+    height: 50vh;
+    width: 100vw;
+    padding: rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    -webkit-animation: fade 5s forwards; /* Safari and Chrome */
+    -moz-animation: fade 5s forwards; /* Firefox */
+    animation: fade 5s forwards; /* Standard syntax */
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }   
+}
+@keyframes popupAnimation {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+.hello{
+    color:gray;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.introName{
+    color:rgb(0, 119, 128);
+}
+
+.introText{
+    color: gray;
+}
+
+.introPara{
+    color:gray;
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+    animation: fade 2s;
+}
+
+.btn{
+    background: green;
+    color: white;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    animation: popupAnimation 2s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 1px;
+    height: 1.1rem;
+
+}
+
+@media screen and (max-width: 840px) {
+    .bg{
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .bg{
+        right: -20vw;
+    }
+}
